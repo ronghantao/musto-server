@@ -2,3 +2,4 @@
 
 require:
     - play
+    - gson 2.3

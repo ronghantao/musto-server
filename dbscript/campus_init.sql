@@ -1,0 +1,3 @@
+insert into user values(NULL, 'ronghantao', '1302000xxxx', 'ronghantao@baidu.com', '戎韩桃', 0, '130185xxxxxxxxxxxx', '', '1985-01-01', '河北', '石家庄', 0, 0);
+insert into userSecure values(NULL, 1, '1302000xxxx', 'ronghantao@baidu.com', 'ronghantao', '20120610102345', 'f447b20a7fcbf53a5d5be013ea0b15af');
+insert into studentInfo values(NULL, 1, '20120610102345', 'exam10203012', '数学与信息科学学院', '计算机科学与技术', '2008', '03', '青年公寓-01', '1023', 'archive1020', 0);
