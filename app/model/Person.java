@@ -33,7 +33,7 @@ public class Person{
 		this.originCity = u.originCity;
 	}
 	
-	public String getJson(){
+	public Object getObj(){
 		Map<String, Object> obj = new HashMap<String, Object>();
 		for(Field field :this.getClass().getFields()){
 			try{
@@ -42,6 +42,6 @@ public class Person{
 				
 			}
 		}
-		return new Gson().toJson(obj);
+		return obj;
 	}
 }
