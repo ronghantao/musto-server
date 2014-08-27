@@ -23,6 +23,6 @@ public class Verify extends BaseController {
 			@Required @Min(0) @Max(3) Integer loginType) {
 		checkParams();
 		Person p = LoginService.newInstance(loginId, pwdMd5, loginType).checkUserGet();
-        renderJSON(p.getJson());
+        renderJSON(onSuccess(p.getJson()));
     }
 }
