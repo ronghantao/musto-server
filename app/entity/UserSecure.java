@@ -53,6 +53,6 @@ public class UserSecure extends GenericModel {
 			return null;
 		}
 		List<UserSecure> secure =  UserSecure.find(typeKeyMap.get(loginType)+" = ?", value).fetch();
-		return secure.get(0);
+		return ((secure==null||secure.size()==0)?null:secure.get(0));
 	}
 }

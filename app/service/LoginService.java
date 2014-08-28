@@ -10,7 +10,7 @@ public class LoginService {
 	
 	private LoginService(String loginId, String pwd, int type){
 		this.loginId = loginId;
-		this.pwd = pwd;
+		this.pwd = pwd.trim();
 		this.type = type;
 	}
 	
@@ -25,7 +25,7 @@ public class LoginService {
 	 */
 	public Integer getUid(){
 		UserSecure us = UserSecure.findByLoginType(this.loginId, this.type);
-		if(us != null && us.password.equals(this.pwd)){
+		if(us != null && us.password.trim().equals(this.pwd)){
 			return us.uid;
 		}
 		return null;
